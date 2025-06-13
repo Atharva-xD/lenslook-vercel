@@ -41,7 +41,7 @@ const Signin = ({ close, onLogin }) => {
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
     } else {
-      const isAdmin = email === 'admin@gmail.com' && password === 'lanelook';
+      const isAdmin = email === 'admin@gmail.com' && password === 'lenslook';
       const userData = { email, isAdmin };
       
       if (typeof onLogin === 'function') {

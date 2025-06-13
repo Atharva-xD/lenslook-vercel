@@ -24,7 +24,7 @@ const overlayVariants = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } }, // Fade in and scale up
 };
 
-export default function EyewearCommitment() {
+export default function About() {
   return (
     <div className="eyewear-wrapper container">
       <motion.div

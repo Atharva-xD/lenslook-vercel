@@ -119,13 +119,13 @@ const Contact = () => {
           <LuSmile className='icon' />
           <h3>Chat to Sales</h3>
           <p>Speak to our friendly sales team for assistance with your orders.</p>
-          <a href="mailto:sales@lanelook.com">sales@lanelook.com</a>
+          <a href="mailto:sales@lenslook.com">sales@lenslook.com</a>
         </div>
         <div className="contact-card">
           <HelpCircle className="icon" />
           <h3>Chat to Support</h3>
           <p>We’re here to help with any issues you may have.</p>
-          <a href="mailto:support@lanelook.com">support@lanelook.com</a>
+          <a href="mailto:support@lenslook.com">support@lenslook.com</a>
         </div>
         <div className="contact-card">
           <MapPin className="icon" />

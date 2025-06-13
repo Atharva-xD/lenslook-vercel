@@ -20,8 +20,8 @@ const containerVariants = {
 };
 
 const overlayVariants = {
-  hidden: { opacity: 0, scale: 0.8 }, // Start hidden and scaled down
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } }, // Fade in and scale up
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
 };
 
 export default function About() {

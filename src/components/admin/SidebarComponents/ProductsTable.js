@@ -8,8 +8,8 @@ import './ProductsTable.css';
 const ProductsTable = () => {
   const [activeTab, setActiveTab] = useState('details'); // State to track active tab
   const [products, setProducts] = useState([
-    { id: 1, name: 'Product 1', price: '$100', stock: 20, category: 'Category A' },
-    { id: 2, name: 'Product 2', price: '$150', stock: 10, category: 'Category B' },
+    { id: 1, name: 'Product 1', price: '$100', stock: 20, category: 'Category A', productId: 'P001', frameStyle: 'Style A', modelNo: 'Model 1' },
+    { id: 2, name: 'Product 2', price: '$150', stock: 10, category: 'Category B', productId: 'P002', frameStyle: 'Style B', modelNo: 'Model 2' },
     // Add more initial products here
   ]);
 
@@ -89,13 +89,12 @@ const ProductsTable = () => {
                           setSelectedProduct(product);
                           setIsModalOpen(true);
                         }}
-
                         className='editproductData'
                       >
                         <FaRegEdit />
                       </button>
                       <button onClick={() => handleDeleteProduct(product.id)} className='deleteproductData'>
-                      <RiDeleteBin6Line />
+                        <RiDeleteBin6Line />
                       </button>
                     </td>
                   </tr>

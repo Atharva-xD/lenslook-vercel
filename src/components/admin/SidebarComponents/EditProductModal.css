@@ -3,20 +3,26 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 400px;
+    width: 90%; /* Responsive width */
+    max-width: 600px; /* Max width */
+    max-height: 80vh; /* Max height to allow scrolling */
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     z-index: 1000;
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden;
+    padding: 20px; /* Move padding here for consistent scroll */
 }
 
 .modal-content {
-    padding: 20px;
+    /* Remove padding here because now padding is on container */
 }
 
 .modal-content h4 {
     margin-bottom: 20px;
     color: #444;
+    text-align: center; /* Center the title */
 }
 
 .modal-content form {
@@ -29,6 +35,7 @@
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    font-size: 16px; /* Better readability */
 }
 
 .modal-content button {
@@ -38,6 +45,8 @@
     border: none;
     cursor: pointer;
     border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s;
 }
 
 .modal-content button:hover {
@@ -51,3 +60,21 @@
 .modal-content button[type="button"]:hover {
     background-color: #c0392b;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .edit-product-modal {
+        width: 95%;
+        max-height: 85vh;
+    }
+
+    .modal-content h4 {
+        font-size: 20px;
+    }
+
+    .modal-content input,
+    .modal-content button {
+        font-size: 14px;
+    }
+}
+

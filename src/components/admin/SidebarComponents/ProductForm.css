@@ -2,45 +2,57 @@
 .product-form {
     max-width: 600px;
     width: 100%;
-    padding: 20px;
-    background-color: #fff;
+    padding: 30px; /* Increased padding for a more spacious feel */
+    background-color: #f9f9f9; /* Light background for better contrast */
     border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
     margin: 20px auto; /* Center the form */
-  }
-  
-  .product-form h4 {
+}
+
+.product-form h4 {
     font-family: "Syne", sans-serif; /* Match the font style */
-    font-size: 1.8rem;
-    margin-bottom: 15px;
+    font-size: 2rem; /* Increased font size for better visibility */
+    margin-bottom: 20px; /* Increased margin for better spacing */
     text-align: center;
     color: #333; /* Match the color */
-  }
-  
-  .product-form form {
+}
+
+.product-form form {
     display: flex;
     flex-direction: column;
-  }
-  
-  .product-form input {
-    padding: 10px;
-    margin: 15px 0; /* Adjust margin for spacing */
+}
+
+.product-form input {
+    padding: 12px; /* Increased padding for better touch targets */
+    margin: 10px 0; /* Adjust margin for consistent spacing */
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
-  }
-  
-  .product-form button {
-    padding: 10px 20px;
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.product-form input:focus {
+    border-color: #333; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.product-form button {
+    padding: 12px 20px; /* Increased padding for better touch targets */
     margin: 15px 0; /* Adjust margin for spacing */
     background-color: #333;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  .product-form button:hover {
-    background-color: #555;
-  }
+    font-size: 1rem; /* Ensure button text is readable */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.product-form button:hover {
+    background-color: #555; /* Darker shade on hover */
+}
+
+.product-form button:active {
+    background-color: #444; /* Even darker shade when button is pressed */
+}

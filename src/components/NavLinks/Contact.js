@@ -131,7 +131,7 @@ const Contact = () => {
           <MapPin className="icon" />
           <h3>Visit Us</h3>
           <p>Come visit our office HQ for personalized assistance.</p>
-          <a href="https://maps.google.com" target="_blank" rel="noreferrer">View on Google Maps</a>
+          <a href="https://g.co/kgs/5R2oBeN" target="_blank" rel="noreferrer">View on Google Maps</a>
         </div>
         <div className="contact-card">
           <Phone className="icon" />
